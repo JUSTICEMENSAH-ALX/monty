@@ -25,26 +25,7 @@ What you should learn from this project:
  *
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO Holberton project
- */
-typedef struct instruction_s
-{
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
-} instruction_t;
-Example
-vagrant@vagrant-ubuntu-trusty-64:~/monty$ cat bytecodes/00.m
-push 1
-push 2
-push 3
-pall
-vagrant@vagrant-ubuntu-trusty-64:~/monty$ gcc -Wall -Werror -Wextra -pedantic *.c -o monty -g
-vagrant@vagrant-ubuntu-trusty-64:~/monty$ ./monty bytecodes/00.m
-3
-2
-1
-vagrant@vagrant-ubuntu-trusty-64:~/monty$
-Respository Contenst
-Monty Files:
+ 
 File	Description
 monty.h	Header file that contains all the functions and standard C library header file
 monty.c	Contains the int main(int argc, char **argv)
